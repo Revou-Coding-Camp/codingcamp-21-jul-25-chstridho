@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do list App Revou</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo list</h1>
+
+      <div class="input-section">
+        <input type="text" id="todoInput" placeholder="Add a new task..." />
+        <input type="date" id="dateInput" />
+        <button id="addBtn">+</button>
+      </div>
+
+      <div class="filter-section">
+        <button id="filterBtn">Filter</button>
+        <button id="deleteAllBtn">Delete All</button>
+      </div>
+
+      <div class="todo-list">
+        <table>
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Due Date</th>
+              <th>Actions</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="todoList">
+            <!-- Todo items akan muncul di sini -->
+          </tbody>
+        </table>    
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
